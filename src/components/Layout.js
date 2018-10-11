@@ -27,8 +27,7 @@ export const Layout = ()=>{
             <Route path='/cars' exact component={Cars}/>
             <Route path='/login' exact component={Login}/>
             <Route path='/greet/:username/:city' render={(props)=> (<Greet {...props} username={extraProps}/>)}/>
-            <Route path='/greet/:username/:city' render={(props)=> (<Greet {...props}/>)}/>
-            <Route path='/greet/:username/:city' component={Greet}/>
+           
             <Route component={NotFound}/>
         </Switch>
         </main>
